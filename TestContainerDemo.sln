@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestContainerDemo", "TestContainerDemo\TestContainerDemo.csproj", "{4E1A0920-4641-4762-9106-520D2F00DADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestContainerDemo.Tests.Integration", "TestContainerDemo.Tests.Integration\TestContainerDemo.Tests.Integration.csproj", "{34F577C3-2ACA-46E6-9443-BEF35DA49DA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E1A0920-4641-4762-9106-520D2F00DADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1A0920-4641-4762-9106-520D2F00DADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1A0920-4641-4762-9106-520D2F00DADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1A0920-4641-4762-9106-520D2F00DADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F577C3-2ACA-46E6-9443-BEF35DA49DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F577C3-2ACA-46E6-9443-BEF35DA49DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F577C3-2ACA-46E6-9443-BEF35DA49DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F577C3-2ACA-46E6-9443-BEF35DA49DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
