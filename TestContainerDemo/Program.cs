@@ -1,7 +1,6 @@
 using System.Data;
 using Dapper;
 using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 {
@@ -13,7 +12,7 @@ var config = builder.Configuration;
 builder.Services.AddSingleton<IDbConnectionFactory>(_ =>
     new SqlConnectionFactory(config.GetValue<string>("Database:ConnectionString")));
 builder.Services.AddSingleton<DatabaseInitializer>();
-//builder.Services.AddDbContext<TodoDb>();
+
 var app = builder.Build();
 app.MapGet("/todoitems",
     async (IDbConnectionFactory db) =>
@@ -140,17 +139,6 @@ public class SqlConnectionFactory : IDbConnectionFactory
         return connection;
     }
 }
-
-public class TodoDb : DbContext
-{
-    public TodoDb(DbContextOptions<TodoDb> options)
-        : base(options)
-    {
-    }
-
-    public DbSet<Todo> Todos => Set<Todo>();
-}
-
 public class DatabaseInitializer
 {
     private readonly IDbConnectionFactory _connectionFactory;
